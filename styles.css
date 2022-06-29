@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Tenor+Sans&display=swap");
+
+body {
+  font-family: "Archivo Narrow", sans-serif;
+}
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+}
+.nav-burger {
+  width: 40px;
+  height: 40px;
+}
+
+#header,
+.image-row1,
+.image-row2,
+.image-row3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.head-img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
