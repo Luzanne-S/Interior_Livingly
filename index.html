@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -143,33 +147,53 @@
     <!--Footer-->
     <footer>
       <div><!--logo--></div>
-      <div>
-        <h5>Home</h5>
-        <ul>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Work With Me</a></li>
-          <li><a class="nav-link" href="#">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Social</h5>
-        <ul>
-          <li><a class="nav-link" href="#">Instagram</a></li>
-          <li><a class="nav-link" href="#">Linkedin</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Design App</h5>
-        <a class="nav-link" href="#">Explore </a>
-      </div>
-      <div>
-        <h4>Join the Newsletter</h4>
-        <p>Enter your email and we'll keep you updated on new updates</p>
-        <!--Newsletter Form-->
-        <form id="newsletter">
-          <input type="email" placeholder="enter your email..." />
-          <button>Submit</button>
-        </form>
+      <div id="footer-row">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Work With Me</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Social</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Design App</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Join the Newsletter</h4>
+            <p>Enter your email and we'll keep you updated on new updates</p>
+            <!--Newsletter Form-->
+            <form id="newsletter">
+              <input type="email" placeholder="enter your email..." />
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
