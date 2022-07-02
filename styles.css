@@ -14,6 +14,7 @@ h1 {
   width: 40px;
   height: 40px;
 }
+
 #header {
   margin-top: 7%;
   justify-content: center;
@@ -45,7 +46,12 @@ footer {
   padding: 10px;
   width: 150px;
 }
-
+ul {
+  list-style: none;
+}
+.row {
+  margin-top: 10%;
+}
 @media (max-width: 700px) {
   #header {
     flex-direction: column-reverse;
