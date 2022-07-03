@@ -16,7 +16,7 @@ h1 {
 }
 
 #header {
-  margin-top: 7%;
+  margin-top: 8%;
   justify-content: center;
 }
 #header,
@@ -38,7 +38,21 @@ footer {
   margin-top: 13%;
   padding-left: 5%;
 }
-
+.logo {
+  width: 200px;
+  margin-top: -5%;
+  height: 200px;
+  padding-bottom: 5%;
+}
+.navbar-toggler {
+  margin-top: -7%;
+}
+.navbar-logo {
+  width: 100px;
+  height: 100px;
+  margin-top: -7%;
+  margin-left: -10%;
+}
 .header-btn1,
 .header-btn2 {
   margin-top: 6%;
@@ -56,5 +70,8 @@ ul {
   #header {
     flex-direction: column-reverse;
     margin-top: 10%;
+  }
+  .navbar-toggler {
+    margin-top: -30%;
   }
 }
