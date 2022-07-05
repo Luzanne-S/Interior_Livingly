@@ -23,7 +23,7 @@ h1 {
 .image-row1,
 .image-row2,
 .image-row3,
-footer {
+.row {
   display: flex;
   flex-direction: row;
 }
@@ -71,6 +71,10 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
+.blog3,
+.blog4 {
+  padding: 3%;
+}
 .blog-img1 {
   width: 400px;
   height: 400px;
@@ -83,7 +87,22 @@ ul {
   width: 300px;
   height: 350px;
 }
-
+footer {
+  padding: 3%;
+}
+.footer-logo {
+  width: 100px;
+  height: 100px;
+}
+.row {
+  width: 100%;
+  margin-top: 0;
+  justify-content: center;
+}
+.newsletter {
+  background-color: #ded9c7;
+  padding: 2%;
+}
 @media (max-width: 700px) {
   #header {
     flex-direction: column-reverse;
@@ -91,5 +110,11 @@ ul {
   }
   .navbar-toggler {
     margin-top: -30%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .newsletter {
+    width: 100%;
   }
 }
