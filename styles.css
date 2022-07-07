@@ -71,7 +71,8 @@ h2 {
 ul {
   list-style: none;
 }
-.row {
+.row,
+.about-h3 {
   margin-top: 10%;
 }
 h2 {
@@ -79,7 +80,8 @@ h2 {
   margin-top: 10%;
 }
 
-.mainBlogLink {
+.mainBlogLink,
+.about-cta {
   color: #062c30;
   font-size: large;
   text-decoration: none;
@@ -94,9 +96,13 @@ h2 {
   background-clip: text, padding-box;
   transition: 0.5s;
 }
-.mainBlogLink:hover {
+.mainBlogLink:hover,
+.about-cta:hover {
   --_p: 100%;
   color: #e2d784;
+}
+.about-cta {
+  margin-left: 30%;
 }
 #wrapper {
   display: flex;
@@ -134,6 +140,13 @@ footer {
 .newsletter {
   background-color: #f0ecdd;
   padding: 2%;
+}
+.about-p1,
+.about-p2,
+.about-h3 {
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 @media (max-width: 700px) {
   #header {
