@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
-      href="https://api.fontshare.com/v2/css?f[]=melodrama@600,500&f[]=nunito@400&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=melodrama@600,500&f[]=nunito@400&f[]=satoshi@400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -45,108 +45,131 @@
         <div class="image-row1">
           <div data-aos="fade-down" data-aos-duration="3000">
             <img
-              src="images/row-1-column-1.jpg"
+              src="images/headerBlock1.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
           <div data-aos="fade-down" data-aos-duration="3000">
             <img
-              src="images/row-1-column-2.jpg"
+              src="images/headerBlock2.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
         </div>
         <div class="image-row2">
           <div data-aos="fade-right" data-aos-duration="2000">
             <img
-              src="images/row-2-column-1.jpg"
+              src="images/headerBlock3.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
           <div data-aos="fade-left" data-aos-duration="2000">
             <img
-              src="images/row-2-column-2.jpg"
+              src="images/headerBlock4.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
         </div>
         <div class="image-row3">
           <div data-aos="fade-up" data-aos-duration="1500">
             <img
-              src="images/row-3-column-1.jpg"
+              src="images/headerBlock5.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
           <div data-aos="fade-up" data-aos-duration="1500">
             <img
-              src="images/row-3-column-2.jpg"
+              src="images/headerBlock6.jpg"
               class="head-img"
-              alt="room with yellow chair"
+              alt="light and airy living room"
             />
           </div>
         </div>
       </div>
       <!--Header Text-->
       <div class="header-text">
-        <h1>Piece together your space</h1>
-        <h3>Get ideas for your space</h3>
+        <h1>Piece Your Space Together</h1>
+        <p class="header-p">
+          Get ideas to update your space, making it more beautiful yet
+          functional.
+        </p>
         <!--Header Buttons-->
         <div class="header-buttons">
           <button class="header-btn1">Read the Blog</button>
-          <button class="header-btn2">Explore the App</button>
         </div>
       </div>
     </section>
     <!--Design App-->
+    <div id="appPreview">
+      <div class="appText"></div>
+      <div class="appVideo"></div>
+    </div>
     <!--Blog-->
-    <h2>Blog</h2>
-    <div id="wrapper">
+    <div class="MainBlogIntro">
+      <h2>Blog</h2>
+      <small class="blogSmall">Find a post to inspire you</small>
+    </div>
+
+    <div id="MainBlogWrapper">
       <div class="blog1">
-        <img
-          src="images/blog-img1.jpg"
-          class="blog-img1"
-          alt="modern styled bedroom "
-        />
-        <h4>Bed Rooms</h4>
-        <p>sbdkjvaskdka</p>
+        <a href="#">
+          <img
+            src="images/blog-img1.jpg"
+            class="blog-img1"
+            alt="natural living room"
+          />
+        </a>
+        <h4>LIVING ROOMS</h4>
+        <p class="mainBlog-p">
+          Modern living rooms to pretty to look at, yet comfortable to host in.
+        </p>
       </div>
 
-      <div class="blog3">
-        <h4>Home Offices</h4>
-        <p>sbdkjvaskdka</p>
-        <img
-          src="images/blog-img2.jpg"
-          class="blog-img2"
-          alt="minimalistic home office"
-        />
+      <div class="blog2">
+        <h4>HOME OFFICES</h4>
+        <p class="mainBlog-p">
+          Home offices do not need to be boring or overly styled. Here are a few
+          necessities to have in your home office.
+        </p>
+        <a href="#">
+          <img
+            src="images/blog-img2.jpg"
+            class="blog-img2"
+            alt="minimalistic home office"
+          />
+        </a>
       </div>
-      <div class="blog4">
-        <img
-          src="images/blog-img3.jpg"
-          class="blog-img3"
-          alt="light grey living room"
-        />
-        <h4>Light and Airy living room</h4>
-        <p>sbdkjvaskdkasjdbkajsbdakv</p>
+      <div class="blog3">
+        <a href="#">
+          <img
+            src="images/blog-img3.jpg"
+            class="blog-img3"
+            alt="light and minimalistic bedroom"
+          />
+        </a>
+        <h4>CALMING BEDROOM</h4>
+        <p class="mainBlog-p">
+          Calming, minimalistic but still beautiful bedroom retreat ideas.
+        </p>
       </div>
     </div>
-    <a href="blog.html" class="mainBlogLink">Read Our Articles</a>
+    <a href="blog.html" class="mainBlogLink">More Blog Posts</a>
     <!--Footer-->
     <footer>
       <div class="row">
-        <div>
+        <div class="footer-col">
           <a href="#" class="nav-linkFooter"
             ><img src="images/grid.png" class="footer-logo"
           /></a>
         </div>
         <div class="footer-col">
-          <h5>Home</h5>
-          <ul class="nav flex-column">
+          <h5>HOME</h5>
+          <ul class="footer-nav">
             <li class="nav-item mb-2">
               <a href="about.html" class="nav-linkFooter">About</a>
             </li>
@@ -154,14 +177,14 @@
               <a href="blog.html" class="nav-linkFooter">Blog</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="work.html" class="nav-linkFooter">Work With Me</a>
+              <a href="work.html" class="nav-linkFooter">Contact</a>
             </li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>Social</h5>
-          <ul class="nav flex-column">
+          <h5>SOCIAL</h5>
+          <ul class="footer-nav">
             <li class="nav-item mb-2">
               <a href="#" class="nav-linkFooter">Instagram</a>
             </li>
@@ -172,16 +195,18 @@
         </div>
 
         <div class="footer-col">
-          <h5>Design App</h5>
-          <ul class="nav flex-column">
+          <h5>DESIGN APP</h5>
+          <ul class="footer-nav">
             <li class="nav-item mb-2">
               <a href="app.html" class="nav-linkFooter">Explore</a>
             </li>
           </ul>
         </div>
-        <div class="col-4 newsletter">
-          <h4>Join the Newsletter</h4>
-          <p>Enter your email and we'll keep you updated on new updates</p>
+        <div class="footer-col">
+          <h5 class="newsletterH5">SUBSCRIBE TO THE NEWSLETTER</h5>
+          <p class="newsletterP">
+            Enter your email address and we'll keep you updated on new updates
+          </p>
           <!--Newsletter Form-->
           <form id="newsletter">
             <input type="email" placeholder="enter your email..." />
