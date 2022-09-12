@@ -269,16 +269,70 @@ label {
 }
 
 @media (max-width: 700px) {
+  a.brand-logo {
+    font-size: 30px;
+  }
   #header {
     flex-direction: column-reverse;
     margin-top: 10%;
   }
 
   #nav.nav.is-active {
-    width: fit-content;
+    width: max-content;
   }
+  h1 {
+    font-size: 40px;
+  }
+  .header-btn1 {
+    margin-bottom: 6%;
+  }
+  .header-image {
+    margin: auto;
+  }
+  .head-img {
+    width: 160px;
+    height: auto;
+  }
+  #MainBlogWrapper,
   .row {
     flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .mainBlogLink {
+    margin: 5% 0 5% 30%;
+  }
+  .blog-img1,
+  .blog-img2,
+  .blog-img3 {
+    width: 350px;
+  }
+  .blog2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .blog1,
+  .blog2,
+  .blog3 {
+    margin: auto;
+    width: 100%;
+  }
+  .footer-col {
+    padding: 0 0 0 20px;
+  }
+  .footer-col h5 {
+    padding: 0;
+  }
+  #newsletter {
+    width: 300px;
+  }
+  #newsletter input,
+  #newsletter button {
+    margin-bottom: 5%;
+    width: 280px;
+  }
+  #newsletter button {
+    width: 304px;
   }
   .newsletter,
   .about-h3,
@@ -349,7 +403,7 @@ label {
 }
 /*    Nav links        */
 .nav {
-  background-color: #fff9fb;
+  background-color: #b1886afe;
   display: none;
   position: absolute;
   top: 0;
