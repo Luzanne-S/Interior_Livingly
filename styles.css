@@ -228,3 +228,196 @@ footer h5 {
   text-decoration: none;
   color: #000;
 }
+#about-header {
+  margin-top: -5%;
+}
+.about-p1,
+.about-p2,
+.about-h3 {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+}
+.aboutIcon-cta {
+  width: 80px;
+  height: auto;
+  fill: #0f4d54;
+}
+.about-h3 {
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+#workForm {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+label {
+  font-size: 13px;
+  padding: 8px;
+}
+#workForm input {
+  padding: 10px;
+}
+#formSubmit {
+  margin: auto;
+  margin-top: 5%;
+  width: 350px;
+}
+
+@media (max-width: 700px) {
+  #header {
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+
+  #nav.nav.is-active {
+    width: fit-content;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .newsletter,
+  .about-h3,
+  .about-p1,
+  .about-p2 {
+    width: 100%;
+  }
+  #about-header {
+    margin-top: 180px;
+  }
+  .about-p1,
+  .about-p2 {
+    padding: 20px;
+  }
+  .about-h3 {
+    padding-bottom: 40px;
+  }
+}
+/* nav styling*/
+.header {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+.brand-logo {
+  font-family: "Melodrama", serif;
+  height: 70px;
+  height: auto;
+  margin: auto;
+  text-decoration: none;
+  color: #212529;
+  font-size: 40px;
+}
+.nav-burger {
+  display: none;
+}
+.nav-burger.is-active,
+.nav-cancel.is-active {
+  display: block;
+}
+.nav-cancel {
+  z-index: 100;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.nav-icon {
+  padding: 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-burger.is-active,
+  .nav-cancel {
+    display: none;
+  }
+}
+/*    Nav links        */
+.nav {
+  background-color: #fff9fb;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 90px 30px 90px 30px;
+  z-index: 90;
+}
+
+.nav.is-active {
+  display: inline-block;
+}
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 10px;
+  color: #212529;
+  margin-bottom: 15px;
+  font-size: 13px;
+  width: 100%;
+}
+.nav-link:hover {
+  color: #b1abad;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    background-color: #fff;
+    display: inline-block;
+    position: static;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .nav-link {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .nav.is-active {
+    display: block;
+  }
+}
+
+/* Helper classes  */
+.is-hidden {
+  display: none;
+}
+.work-h1 {
+  font-family: "Melodrama", serif;
+  font-size: 25px;
+}
+#work-header p {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+}
+/* app */
+div.info-area {
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  text-align: center;
+}
+
+#xr-button {
+  width: 100px;
+  height: 35px;
+  margin: 15px;
+}
