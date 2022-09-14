@@ -24,7 +24,6 @@ h1 {
   font-size: 50px;
 }
 
-.about-h1,
 .blog-h1,
 .work-h1 {
   margin-top: 10%;
@@ -218,26 +217,72 @@ footer h5 {
   padding: 10px;
 }
 #newsButton:hover {
-  border-color: #97745b;
-  color: #fff;
-  border: solid;
-  background-color: transparent;
+  background-color: #8b6347;
+  border-color: #b1886a;
   transition: 2s;
 }
 .nav-linkFooter {
   text-decoration: none;
   color: #000;
 }
-#about-header {
-  margin-top: -5%;
+#about-headerImage {
+  background-image: url("images/aboutHeader.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(0.7) brightness(0.8);
+  z-index: -1;
+}
+#about-headerH1 {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 25%;
+  display: flex;
+}
+.aboutIntro,
+.about-blogIntro,
+.about-appIntro {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.about-text {
+  width: 40%;
+  margin: 5%;
 }
 .about-p1,
-.about-p2,
-.about-h3 {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  padding-top: 30px;
+.about-p2 {
+  width: 100%;
+}
+.about-img {
+  width: 410px;
+  height: auto;
+}
+.aboutBlog-img,
+.aboutApp-img {
+  width: 580px;
+  height: auto;
+}
+.aboutSmall {
+  font-size: 14px;
+  color: #505356;
+}
+
+.aboutIcon-div {
+  width: 40%;
+  padding: 5%;
+}
+.chapter3-p {
+  width: 70%;
+}
+.chapter2-p {
+  width: 80%;
 }
 .aboutIcon-cta {
   width: 80px;
@@ -293,8 +338,10 @@ label {
     width: 160px;
     height: auto;
   }
+
   #MainBlogWrapper,
-  .row {
+  .row,
+  .about-blogIntro {
     flex-direction: column;
     margin-top: 5%;
   }
@@ -302,20 +349,36 @@ label {
   .mainBlogLink {
     margin: 5% 0 5% 30%;
   }
+  #about-headerH1 {
+    top: 40%;
+    left: 10%;
+    font-size: 20px;
+  }
+
   .blog-img1,
   .blog-img2,
-  .blog-img3 {
+  .blog-img3,
+  .aboutBlog-img,
+  .aboutApp-img,
+  .about-img {
     width: 350px;
   }
-  .blog2 {
+  .blog2,
+  .aboutIntro,
+  .about-appIntro {
     display: flex;
     flex-direction: column-reverse;
   }
   .blog1,
   .blog2,
-  .blog3 {
+  .blog3,
+  .about-text,
+  .aboutIcon-div {
     margin: auto;
     width: 100%;
+  }
+  .aboutIcon-div {
+    padding: 0;
   }
   .footer-col {
     padding: 0 0 0 20px;
@@ -340,13 +403,7 @@ label {
   .about-p2 {
     width: 100%;
   }
-  #about-header {
-    margin-top: 180px;
-  }
-  .about-p1,
-  .about-p2 {
-    padding: 20px;
-  }
+
   .about-h3 {
     padding-bottom: 40px;
   }
