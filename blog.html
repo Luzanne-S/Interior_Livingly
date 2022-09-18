@@ -27,13 +27,73 @@
         <a href="about.html" class="nav-link">ABOUT</a>
         <a href="app.html" class="nav-link">DESIGN APP</a>
         <a href="blog.html" class="nav-link">BLOG</a>
-        <a href="work.html" class="nav-link">CONTACT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
       </nav>
     </header>
     <!--Header-->
-    <section id="blog-header">
+    <section id="blogHeader">
       <h1 class="blog-h1">Blog</h1>
-      <p></p>
+    </section>
+
+    <section id="blog-headerArticle">
+      <div class="headerBlogImg">
+        <img
+          src="images/PlantImg.jpg"
+          class="blogHeader"
+          alt="light living room with large plant in basket planter"
+        />
+      </div>
+      <div class="headerBlogText">
+        <p></p>
+        <button>Read More</button>
+      </div>
+    </section>
+    <!--Blog Posts-->
+    <section class="blogArticlesRow">
+      <div class="blogArticle">
+        <a href="livingRoom.html" class="blogArticleLink">
+          <img
+            src="images/blog-img1.jpg"
+            class="articleImg"
+            alt="natural living room"
+          />
+          <small class="blogDateSmall">20 SEPTEMBER 2022</small>
+          <h4>LIVING ROOMS</h4>
+          <p class="blogArticle-p">
+            Modern living rooms to pretty to look at, yet comfortable to host
+            in.
+          </p>
+        </a>
+      </div>
+      <div class="blogArticle">
+        <a href="homeOffices.html" class="blogArticleLink">
+          <img
+            src="images/blog-img2.jpg"
+            class="articleImg"
+            alt="minimalistic home office"
+          />
+          <small class="blogDateSmall">20 SEPTEMBER 2022</small>
+          <h4>HOME OFFICES</h4>
+          <p class="blogArticle-p">
+            Home offices do not need to be boring or overly styled. Here are a
+            few necessities to have in your home office.
+          </p>
+        </a>
+      </div>
+      <div class="blogArticle">
+        <a href="calmingBedroom.html" class="blogArticleLink">
+          <img
+            src="images/blog-img3.jpg"
+            class="articleImg"
+            alt="light and minimalistic bedroom"
+          />
+          <small class="blogDateSmall">20 SEPTEMBER 2022</small>
+          <h4>CALMING BEDROOMS</h4>
+          <p class="blogArticle-p">
+            Calming, minimalistic but still beautiful bedroom retreat ideas.
+          </p>
+        </a>
+      </div>
     </section>
     <!--Footer-->
     <footer>
@@ -53,7 +113,7 @@
               <a href="blog.html" class="nav-linkFooter">Blog</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="work.html" class="nav-linkFooter">Contact</a>
+              <a href="contact.html" class="nav-linkFooter">Contact</a>
             </li>
           </ul>
         </div>
@@ -86,7 +146,7 @@
           <!--Newsletter Form-->
           <form id="newsletter">
             <input type="email" placeholder="enter your email..." />
-            <button>Subscribe</button>
+            <button id="newsButton">Subscribe</button>
           </form>
         </div>
       </div>
