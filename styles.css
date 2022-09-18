@@ -39,7 +39,8 @@ h1 {
 .image-row2,
 .image-row3,
 .row,
-#aboutLinks {
+#aboutLinks,
+.blogArticlesRow {
   display: flex;
   flex-direction: row;
 }
@@ -156,6 +157,13 @@ small.blogSmall {
   height: 280px;
 }
 
+.blog-img1:hover,
+.blog-img2:hover,
+.blog-img3:hover {
+  transform: scale(1.1);
+  transition: 1.2s;
+}
+
 footer {
   background-color: #b1886a;
   margin-top: 5%;
@@ -181,7 +189,8 @@ footer h5 {
   font-size: medium;
 }
 
-.row {
+.row,
+.blogArticlesRow {
   width: 100%;
   margin-top: 0;
   justify-content: center;
@@ -313,6 +322,27 @@ label {
   width: 350px;
 }
 
+.articleImg {
+  width: 400px;
+  height: 400px;
+}
+.blogHeader {
+  width: 420px;
+  height: auto;
+}
+.blogArticleLink {
+  text-decoration: none;
+  color: #000;
+}
+.blogArticle {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.blogArticle-p {
+  width: 70%;
+  font-size: 17px;
+}
 @media (max-width: 700px) {
   a.brand-logo {
     font-size: 30px;
