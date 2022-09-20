@@ -6,6 +6,17 @@ body {
   font-size: 20px;
 }
 
+ol {
+  list-style: none;
+  font-size: 15px;
+}
+ol li {
+  display: inline;
+}
+ol a {
+  text-decoration: none;
+  color: #36383a;
+}
 h1,
 h2,
 .about-h1,
@@ -40,7 +51,8 @@ h1 {
 .image-row3,
 .row,
 #aboutLinks,
-.blogArticlesRow {
+.blogArticlesRow,
+#blog-headerArticle {
   display: flex;
   flex-direction: row;
 }
@@ -321,10 +333,44 @@ label {
   margin-top: 5%;
   width: 350px;
 }
-
+#blogHeader {
+  background-image: url(images/blogHeader.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(0.9) brightness(0.9);
+  z-index: -1;
+  margin-top: -10%;
+}
+.blog-h1,
+.blogHeader-p {
+  color: #fff;
+  padding-top: 5%;
+  text-align: center;
+  z-index: 2;
+}
+.blogHeader-p {
+  padding-top: 0;
+}
+.blog-h2 {
+  text-align: left;
+}
+#blog-headerArticle {
+  justify-content: center;
+  margin: 10% 0 10%;
+}
+.headerBlogText {
+  width: 40%;
+  padding: 8%;
+}
 .articleImg {
   width: 400px;
   height: 400px;
+}
+.blogArticlesRow {
+  width: 85%;
+  margin: auto;
 }
 .blogHeader {
   width: 420px;
@@ -337,11 +383,15 @@ label {
 .blogArticle {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 15px;
 }
 .blogArticle-p {
-  width: 70%;
+  width: 80%;
   font-size: 17px;
+}
+.blogDateSmall {
+  font-size: 13px;
+  padding-top: 5%;
 }
 @media (max-width: 700px) {
   a.brand-logo {
@@ -371,7 +421,8 @@ label {
 
   #MainBlogWrapper,
   .row,
-  .about-blogIntro {
+  .about-blogIntro,
+  .blogArticlesRow {
     flex-direction: column;
     margin-top: 5%;
   }
@@ -390,12 +441,15 @@ label {
   .blog-img3,
   .aboutBlog-img,
   .aboutApp-img,
-  .about-img {
+  .about-img,
+  .articleImg,
+  .blogHeader {
     width: 350px;
   }
   .blog2,
   .aboutIntro,
-  .about-appIntro {
+  .about-appIntro,
+  #blog-headerArticle {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -403,19 +457,21 @@ label {
   .blog2,
   .blog3,
   .about-text,
-  .aboutIcon-div {
+  .aboutIcon-div,
+  .headerBlogText {
     margin: auto;
     width: 100%;
   }
-  .aboutIcon-div {
+
+  .aboutIcon-div,
+  .blogArticle,
+  .footer-col h5 {
     padding: 0;
   }
   .footer-col {
     padding: 0 0 0 20px;
   }
-  .footer-col h5 {
-    padding: 0;
-  }
+
   #newsletter {
     width: 300px;
   }
