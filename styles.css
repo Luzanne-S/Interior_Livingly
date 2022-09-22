@@ -82,23 +82,6 @@ h1 {
   text-align: center;
 }
 
-.header-btn1 {
-  font-size: 14px;
-  width: 190px;
-  padding: 3%;
-  background-color: #b1886a;
-  border: none;
-  color: #fff;
-}
-
-.header-btn1:hover {
-  border-color: #97745b;
-  color: #97745b;
-  border: solid;
-  background-color: transparent;
-  transition: 2s;
-}
-
 ul {
   list-style: none;
 }
@@ -113,8 +96,10 @@ small.blogSmall {
   margin-left: 44%;
   color: #36383a;
 }
+
 .mainBlogLink,
-.about-cta {
+.about-cta,
+.header-btn1 {
   color: #000;
   font-size: large;
   text-decoration: none;
@@ -134,6 +119,7 @@ small.blogSmall {
   margin-left: 45%;
 }
 
+.header-btn1:hover,
 .mainBlogLink:hover,
 .about-cta:hover {
   --_p: 100%;
@@ -169,18 +155,24 @@ small.blogSmall {
   height: 280px;
 }
 
-.blog-img1:hover,
-.blog-img2:hover,
-.blog-img3:hover {
-  transform: scale(1.1);
-  transition: 1.2s;
-}
-
 footer {
   background-color: #b1886a;
   margin-top: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+hr {
+  width: 80%;
+  border-style: solid;
+  background-color: rgb(34, 34, 34);
+}
+a.portfolio-link {
+  position: absolute;
+  bottom: 1;
+  left: 45%;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
 }
 .footer-logo {
   width: 40px;
@@ -363,6 +355,26 @@ label {
 .headerBlogText {
   width: 40%;
   padding: 8%;
+}
+.articleH1 {
+  text-align: center;
+}
+#articleLayout {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+#blogArticleMain,
+#blogArticleEnd {
+  width: 80%;
+}
+.article-img,
+.article-img1,
+.article-img2 {
+  margin: auto;
+  width: 400px;
+  height: auto;
 }
 .articleImg {
   width: 400px;
