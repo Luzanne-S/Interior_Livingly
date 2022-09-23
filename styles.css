@@ -23,7 +23,6 @@ h2,
 .blog-h1,
 .work-h1 {
   font-family: "Satoshi", sans-serif;
-
   font-weight: 500;
 }
 h2 {
@@ -125,7 +124,10 @@ small.blogSmall {
   --_p: 100%;
   color: #b1886a;
 }
-
+#MainBlogWrapper a {
+  text-decoration: none;
+  color: #000;
+}
 #MainBlogWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -229,10 +231,15 @@ footer h5 {
   border: solid;
   padding: 10px;
 }
-#newsButton:hover {
+#newsButton:hover,
+#formSubmit:hover {
   background-color: #8b6347;
   border-color: #b1886a;
   transition: 2s;
+}
+
+#formSubmit:hover {
+  color: #fff;
 }
 .nav-linkFooter {
   text-decoration: none;
@@ -244,8 +251,7 @@ footer h5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: contrast(0.7) brightness(0.8);
-  z-index: -1;
+  filter: contrast(0.7) brightness(1);
 }
 #about-headerH1 {
   color: #fff;
@@ -306,12 +312,65 @@ footer h5 {
   margin-top: 50px;
   padding-bottom: 40px;
 }
+#contactBackground {
+  background-image: url("images/contactBackground.jpg");
+  height: 70vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(0.7) brightness(0.9);
+  z-index: -1;
+}
+#work-contact {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+#work-header {
+  padding-top: 3%;
+  margin-bottom: 5%;
+  color: #fff;
+}
 
+#work-header h3 {
+  text-align: center;
+}
 #workForm {
+  padding-top: 5%;
   width: 350px;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+.contactText {
+  width: 35%;
+  padding: 50px;
+}
+.contactText h2 {
+  text-align: start;
+}
+.form-p {
+  font-size: 18px;
+}
+#workForm input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid;
+  border-color: #8b6347;
+}
+#workForm input:focus {
+  outline: none;
+}
+.form-message {
+  height: 10vh;
+}
+#formSubmit {
+  background-color: #b1886a;
+  border: none;
 }
 label {
   font-size: 13px;
@@ -321,9 +380,11 @@ label {
   padding: 10px;
 }
 #formSubmit {
+  padding: 3%;
   margin: auto;
   margin-top: 5%;
   width: 350px;
+  color: #fff;
 }
 #blogHeader {
   background-image: url(images/blogHeader.jpg);
@@ -609,14 +670,7 @@ label {
 .is-hidden {
   display: none;
 }
-.work-h1 {
-  font-family: "Melodrama", serif;
-  font-size: 25px;
-}
-#work-header p {
-  font-family: "Nunito", sans-serif;
-  font-size: 30px;
-}
+
 /* app */
 div.info-area {
   z-index: 2;
