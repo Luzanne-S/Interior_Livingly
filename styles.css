@@ -163,6 +163,9 @@ footer {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+footer .row {
+  flex-wrap: wrap;
+}
 hr {
   width: 80%;
   border-style: solid;
@@ -347,14 +350,15 @@ footer h5 {
   margin: auto;
 }
 .contactText {
-  width: 35%;
   padding: 50px;
+  width: 40%;
 }
 .contactText h2 {
   text-align: start;
 }
 .form-p {
   font-size: 18px;
+  color: #505356;
 }
 #workForm input {
   background-color: transparent;
@@ -478,8 +482,16 @@ label {
   #nav.nav.is-active {
     width: max-content;
   }
-  h1 {
+  h1,
+  .work-h1 {
     font-size: 40px;
+  }
+  footer {
+    font-size: medium;
+  }
+
+  #work-header {
+    font-size: 12px;
   }
   .header-btn1 {
     margin-bottom: 6%;
@@ -495,7 +507,8 @@ label {
   #MainBlogWrapper,
   .row,
   .about-blogIntro,
-  .blogArticlesRow {
+  .blogArticlesRow,
+  #work-contact {
     flex-direction: column;
     margin-top: 5%;
   }
@@ -531,11 +544,23 @@ label {
   .blog3,
   .about-text,
   .aboutIcon-div,
-  .headerBlogText {
+  .headerBlogText,
+  #workForm,
+  #formSubmit {
     margin: auto;
     width: 100%;
   }
-
+  .contactText {
+    width: 80%;
+  }
+  .contactText h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .form-p {
+    font-size: 16px;
+    text-align: center;
+  }
   .aboutIcon-div,
   .blogArticle,
   .footer-col h5 {
@@ -575,6 +600,10 @@ label {
 @media (min-width: 768px) {
   .header {
     padding: 1rem 3rem 1rem 3rem;
+  }
+  .nav-burger.is-active,
+  .nav-cancel {
+    display: none;
   }
 }
 
