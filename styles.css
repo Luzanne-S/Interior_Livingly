@@ -421,7 +421,8 @@ label {
   width: 40%;
   padding: 8%;
 }
-.plants-img1 {
+.plants-img1,
+.plants-img2 {
   width: 560px;
 }
 .articleH1 {
@@ -443,6 +444,17 @@ label {
   margin: auto;
   width: 400px;
   height: auto;
+}
+#blogArticleMain ul,
+#blogArticleIntro ul {
+  list-style: square;
+}
+.plantsLink {
+  text-decoration: none;
+  color: #212529;
+}
+.plantsLink:hover {
+  color: #8b6347;
 }
 .articleImg {
   width: 400px;
@@ -486,9 +498,11 @@ label {
     width: max-content;
   }
   h1,
-  .work-h1 {
+  .work-h1,
+  .articleH1 {
     font-size: 40px;
   }
+  body,
   footer {
     font-size: medium;
   }
@@ -535,7 +549,13 @@ label {
   .blogHeader {
     width: 350px;
   }
-
+  .plants-img,
+  .plants-img1,
+  .plants-img2 {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
   .aboutIntro,
   .about-appIntro,
   #blog-headerArticle {
@@ -549,7 +569,9 @@ label {
   .aboutIcon-div,
   .headerBlogText,
   #workForm,
-  #formSubmit {
+  #formSubmit,
+  #articleLayout,
+  #blogArticleMain {
     margin: auto;
     width: 100%;
   }
