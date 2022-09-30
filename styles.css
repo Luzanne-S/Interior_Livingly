@@ -441,10 +441,12 @@ label {
 .article-img,
 .article-img1,
 .article-img2 {
+  display: block;
   margin: auto;
   width: 400px;
   height: auto;
 }
+
 #blogArticleMain ul,
 #blogArticleIntro ul {
   list-style: square;
@@ -545,16 +547,24 @@ label {
   .aboutBlog-img,
   .aboutApp-img,
   .about-img,
-  .articleImg,
-  .blogHeader {
+  .blogHeader,
+  .article-img,
+  .article-img1,
+  .article-img2 {
     width: 350px;
   }
+
   .plants-img,
   .plants-img1,
-  .plants-img2 {
-    width: 200px;
+  .plants-img2,
+  .blogHeader,
+  .articleImg {
+    width: 285px;
     display: block;
     margin: auto;
+  }
+  .headerBlogText p {
+    width: 80%;
   }
   .aboutIntro,
   .about-appIntro,
