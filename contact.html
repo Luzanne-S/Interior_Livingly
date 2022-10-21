@@ -32,7 +32,7 @@
           <img src="images/cancel-button.png" alt="" class="nav-icon" />
         </div>
         <a href="about.html" class="nav-link">ABOUT</a>
-        <a href="app.html" class="nav-link">DESIGN APP</a>
+        <a href="catalogue.html" class="nav-link">CATALOGUE</a>
         <a href="blog.html" class="nav-link">BLOG</a>
         <a href="contact.html" class="nav-link">CONTACT</a>
       </nav>
@@ -53,14 +53,20 @@
           Fill out the form and you will be given a response within 24 hours.
         </p>
       </div>
-      <form id="workForm">
+      <form
+        name="contact"
+        action="/pages/success"
+        method="POST"
+        data-netlify="true"
+        id="workForm"
+      >
         <label> FULL NAME</label>
-        <input type="text" required />
+        <input type="text" name="name" required />
         <label>EMAIL</label>
-        <input type="email" required />
+        <input type="text" name="email" required />
         <label>MESSAGE</label>
         <input type="text" class="form-message" required />
-        <button id="formSubmit">SUBMIT</button>
+        <button type="submit" id="formSubmit">SUBMIT</button>
       </form>
     </section>
 
@@ -91,7 +97,11 @@
           <h5>SOCIAL</h5>
           <ul class="footer-nav">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-linkFooter">Instagram</a>
+              <a
+                href="https://www.instagram.com/interiorlivingly/"
+                class="nav-linkFooter"
+                >Instagram</a
+              >
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-linkFooter">Linkedin</a>
@@ -100,10 +110,10 @@
         </div>
 
         <div class="footer-col">
-          <h5>DESIGN APP</h5>
+          <h5>CATALOGUE</h5>
           <ul class="footer-nav">
             <li class="nav-item mb-2">
-              <a href="app.html" class="nav-linkFooter">Explore</a>
+              <a href="catalogue.html" class="nav-linkFooter">Explore</a>
             </li>
           </ul>
         </div>
