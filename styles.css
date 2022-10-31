@@ -80,7 +80,11 @@ h1 {
   padding-left: 5%;
   text-align: center;
 }
-
+.header-text h1 {
+  font-size: 60px;
+  width: 70%;
+  margin: auto;
+}
 ul {
   list-style: none;
 }
@@ -622,9 +626,22 @@ label {
   .about-p2 {
     width: 100%;
   }
-
+  .articleImg {
+    margin-bottom: 10%;
+  }
+  .about-h1 {
+    width: 80%;
+    font-size: 30px;
+  }
+  .about-h2 {
+    font-size: 27px;
+  }
   .about-h3 {
     padding-bottom: 40px;
+  }
+  .about-cta {
+    font-size: medium;
+    margin-bottom: 10%;
   }
 }
 /* nav styling*/
@@ -636,16 +653,51 @@ label {
     width: 60%;
     margin: auto;
   }
+  .about-h1 {
+    width: 70%;
+  }
   .mainBlog-p {
     width: 400px;
   }
-
+  small.blogSmall,
+  .mainBlogLink {
+    text-align: center;
+    margin-left: 40%;
+  }
+  .blog1,
+  .blog2,
+  .blog3,
+  .aboutIntro,
+  .about-blogIntro,
+  .about-appIntro {
+    width: 100%;
+  }
+  .about-text,
+  .aboutIcon-div {
+    width: 90%;
+  }
   .blog-img2 {
     width: 360px;
   }
+  .aboutBlog-img,
+  .aboutApp-img,
+  .about-img {
+    width: 660px;
+    display: block;
+    margin: auto;
+  }
   #MainBlogWrapper,
-  .blogArticlesRow {
+  .blogArticlesRow,
+  #header,
+  .aboutIntro,
+  .about-appIntro {
     flex-direction: column;
+  }
+  .about-blogIntro {
+    flex-direction: column-reverse;
+  }
+  .header-image {
+    margin: auto;
   }
 }
 @media (min-width: 768px) {
