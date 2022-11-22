@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=melodrama@600,500&f[]=nunito@400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>interior Livingly-Blog</title>
   </head>
@@ -36,7 +42,11 @@
       <p class="blogHeader-p">Creative Ideas To Complete Your Space</p>
     </section>
 
-    <section id="blog-headerArticle">
+    <section
+      id="blog-headerArticle"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="headerBlogImg">
         <img
           src="images/PlantImg.jpg"
@@ -58,7 +68,11 @@
       </div>
     </section>
     <!--Blog Posts-->
-    <section class="blogArticlesRow">
+    <section
+      class="blogArticlesRow"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="blogArticle">
         <a href="livingRoom.html" class="blogArticleLink">
           <img
@@ -171,6 +185,9 @@
         >MADE BY LUZANNE</a
       >
     </footer>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
     <!--Photo by <a href="https://unsplash.com/@coohom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Wang</a> on <a href="https://unsplash.com/s/photos/interior-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   --></body>
