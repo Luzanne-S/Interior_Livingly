@@ -21,7 +21,8 @@ h1,
 h2,
 .about-h1,
 .blog-h1,
-.work-h1 {
+.work-h1,
+.button-52 {
   font-family: "Satoshi", sans-serif;
   font-weight: 500;
 }
@@ -42,7 +43,6 @@ h1 {
 
 /* CSS */
 .button-52 {
-  font-family: "Melodrama", serif;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -223,7 +223,6 @@ ul {
   margin: 5% 0 7%;
 }
 small.blogSmall {
-  margin-bottom: 20%;
   color: #36383a;
 }
 
@@ -263,11 +262,16 @@ footer {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-footer .row {
+footer .row,
+.modalRow {
   flex-wrap: wrap;
+}
+footer a:hover {
+  color: #36383a;
 }
 hr {
   width: 80%;
+  margin: auto;
   border-style: solid;
   background-color: rgb(34, 34, 34);
 }
@@ -665,8 +669,9 @@ label {
 
 .catalogueHeader-p {
   color: #fff;
+  font-weight: 600;
   padding-top: 15%;
-  margin-left: -40%;
+  margin-left: -30%;
   z-index: 2;
 }
 .catalogueExRow {
@@ -695,14 +700,24 @@ svg {
   }
 
   .work-h1,
-  .articleH1 {
+  .articleH1,
+  .header-text h1 {
     font-size: 40px;
+    width: 100%;
   }
-  h1 {
-    font-size: 10%;
-    width: 10%;
+  .Welcome1,
+  .Welcome2 {
+    width: 100%;
   }
-
+  .Welcome1 h2,
+  h2 {
+    font-size: 30px;
+  }
+  .Welcome2 p {
+    width: 80%;
+    margin-left: -8%;
+    text-align: center;
+  }
   body,
   footer {
     font-size: medium;
@@ -724,17 +739,16 @@ svg {
   #catalogue-headerImage {
     background-image: url("images/catalogueHeader.jpg");
     height: 50vh;
-    background-size: contain;
+    background-size: cover;
   }
-
+  .catalogue-h1 {
+    margin: 10% 0 5% 50%;
+    font-size: 20px;
+  }
   #catalogue-headerH1 {
-    color: #fff;
-    position: absolute;
-    z-index: 2;
     top: 20%;
-    left: 15%;
+    left: -10%;
     width: 100%;
-    display: flex;
   }
   .catalogueExRow1,
   .catalogueExRow2,
@@ -744,8 +758,17 @@ svg {
   }
   .catalogueHeader-p {
     color: #fff;
-    padding-top: 25%;
-    margin-left: -50%;
+    padding-top: 28%;
+  }
+  .catalogueExCol1 h5 {
+    font-size: 18px;
+  }
+  .catalogueExplanation h2 {
+    margin: 15% auto 15%;
+  }
+  .catalogueExplanation h2,
+  .catalogueItems h2 {
+    font-size: 22px;
   }
   .modalRow button img {
     width: 200px;
@@ -760,20 +783,39 @@ svg {
   #appPreview,
   .catalogueExRow,
   .catalogueExMain,
-  .modalRow {
+  .modalRow,
+  .footer-row {
     flex-direction: column;
     margin-top: 5%;
   }
-
-  .mainBlogLink {
+  div.header-buttons {
+    margin-bottom: 10%;
+  }
+  .appText a,
+  .Welcome2 a,
+  .header-buttons a {
+    margin-left: -30%;
+  }
+  div.headerBlogText a {
+    margin-left: -10%;
+  }
+  .button-52 {
     margin: 5% 0 5% 30%;
   }
+
   #about-headerH1 {
+    text-align: center;
+    width: 100%;
     top: 40%;
-    left: 10%;
     font-size: 20px;
   }
-
+  p.aboutHeader-p {
+    margin-left: -82%;
+  }
+  div.aboutIcon-div a {
+    width: 100%;
+    margin-bottom: 5%;
+  }
   .blog-img1,
   .blog-img2,
   .blog-img3,
@@ -796,6 +838,9 @@ svg {
     width: 285px;
     display: block;
     margin: auto;
+  }
+  img.plants-img2 {
+    margin-left: 10%;
   }
   .headerBlogText p {
     width: 80%;
@@ -821,6 +866,7 @@ svg {
   }
   .contactText {
     width: 80%;
+    margin-left: -5%;
   }
   .contactText h2 {
     font-size: 25px;
@@ -886,16 +932,52 @@ svg {
     width: 60%;
     margin: auto;
   }
+
+  .catalogueExRow1,
+  .catalogueExRow2,
+  .catalogueExRow3 {
+    width: 50%;
+    margin: auto;
+  }
+  .catalogueHeader-p {
+    padding-top: 30%;
+    left: -90%;
+  }
+  svg {
+    width: 160px;
+  }
+  .Welcome1 h2,
+  .appText h2,
+  .MainBlogIntro h2 {
+    font-size: 30px;
+  }
+  small.blogSmall {
+    margin-left: 0;
+  }
+  .catalogueExRow1,
+  .catalogueExRow2,
+  .catalogueExRow3 {
+    margin-top: 8%;
+  }
   .about-h1 {
     width: 70%;
   }
   .mainBlog-p {
     width: 400px;
   }
-  small.blogSmall,
+
   .mainBlogLink {
     text-align: center;
     margin-left: 40%;
+  }
+  #MainBlogWrapper a {
+    margin-left: 30%;
+  }
+  img.blog-img1,
+  img.blog-img2,
+  img.blog-img3 {
+    display: block;
+    margin: auto;
   }
   .blog1,
   .blog2,
@@ -903,6 +985,13 @@ svg {
   .aboutIntro,
   .about-blogIntro,
   .about-appIntro {
+    width: 100%;
+  }
+  div.appText ul {
+    margin-left: 20%;
+  }
+  p.aboutHeader-p {
+    margin-top: 25%;
     width: 100%;
   }
   .about-text,
@@ -919,12 +1008,30 @@ svg {
     display: block;
     margin: auto;
   }
+  img.plants-img,
+  img.plants-img1,
+  img.plants-img2 {
+    margin-left: -30%;
+  }
+  img.articleImg {
+    display: block;
+    margin: 10% auto 2%;
+  }
+  div.blogArticle {
+    text-align: center;
+  }
+  p.blogArticle-p {
+    width: 80%;
+    margin: auto;
+  }
   #MainBlogWrapper,
   .blogArticlesRow,
   .aboutIntro,
   .about-appIntro,
   #appPreview,
-  .catalogueExMain {
+  .catalogueExMain,
+  .modalRow,
+  .footer-row {
     flex-direction: column;
   }
   .home-appImg {
@@ -955,6 +1062,11 @@ svg {
     margin: auto;
     width: 40%;
   }
+  h6.modal-descriptH62,
+  h6.modal-descriptH6,
+  h6.modal-descriptH61 {
+    margin-top: 5%;
+  }
 }
 @media (min-width: 768px) {
   .header {
@@ -980,6 +1092,9 @@ svg {
   text-decoration: none;
   color: #212529;
   font-size: 40px;
+}
+.brand-logo:hover {
+  color: #212529;
 }
 .nav-burger {
   display: none;
