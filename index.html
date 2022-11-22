@@ -15,9 +15,9 @@
       rel="stylesheet"
     />
     <script
-    src="https://kit.fontawesome.com/5d391d372a.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/5d391d372a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Interior Livingly</title>
   </head>
@@ -104,32 +104,56 @@
         </p>
         <!--Header Buttons-->
         <div class="header-buttons">
-          <a href="blog.html" class="header-btn1">Read the Blog</a>
+          <a href="blog.html"
+            ><button class="button-52" role="button">Read the Blog</button></a
+          >
         </div>
       </div>
     </section>
+    <!--Welcome-->
+    <div class="Welcome" data-aos="fade-up" data-aos-duration="1500">
+      <div class="Welcome1">
+        <h2>Welcome to Interior Livingly</h2>
+      </div>
+      <div class="Welcome2">
+        <p>
+          We create the space for you to reimagine how you design your space.
+        </p>
+        <a href="about.html"
+          ><button class="button-52" role="button">Read About Us</button></a
+        >
+      </div>
+    </div>
     <!--Design App-->
-    <div id="appPreview"data-aos="fade-up" data-aos-duration="1500">
+    <div id="appPreview" data-aos="fade-up" data-aos-duration="1500">
+      <div class="appImg">
+        <img
+          src="images/appPreviewImg.png"
+          class="home-appImg"
+          alt="phone with adding chair to space through ar"
+        />
+      </div>
       <div class="appText">
         <h2>Place Items Into Your Space</h2>
-        <p>Browse through the catalogue of items</p>
+        <small class="blogSmall">Browse through the catalogue of items</small>
         <ul>
-          <li><i class="fa-solid fa-square"></i> &nbsp; Select an Item</li>
-          <li><i class="fa-solid fa-square"></i> &nbsp; Place it into your space in real time</li>
+          <li>&#9713;&nbsp; Select an Item</li>
+          <li>&#9714;&nbsp; Place it into your space in real time</li>
         </ul>
-        <a href="catalogue.html"class="appMainBtn">Browse the Catalogue</a>
-      </div>
-      <div class="appImg">
-        <img src="images/appImg.png" class="home-appImg" alt="phone with adding chair to space through ar"/>
+        <a href="catalogue.html"
+          ><button class="button-52" role="button">Browse Catalogue</button></a
+        >
       </div>
     </div>
     <!--Blog-->
-    <div class="MainBlogIntro"data-aos="fade-up" data-aos-duration="2000">
+    <div class="MainBlogIntro" data-aos="fade-up" data-aos-duration="2000">
       <h2>Blog</h2>
-      <small class="blogSmall">Find a post to inspire you</small>
+      <small class="blogSmall"
+        >Find a post to inspire you to redesign your space</small
+      >
     </div>
 
-    <div id="MainBlogWrapper"data-aos="fade-up" data-aos-duration="2000">
+    <div id="MainBlogWrapper" data-aos="fade-up" data-aos-duration="2000">
       <div class="blog1">
         <a href="livingRoom.html">
           <img
@@ -137,33 +161,34 @@
             class="blog-img1"
             alt="natural living room"
           />
-        
-        <h4>LIVING ROOMS</h4>
-        <p class="mainBlog-p">
-          Modern living rooms to pretty to look at, yet comfortable to host in.
-        </p>
+
+          <h4>LIVING ROOMS</h4>
+          <p class="mainBlog-p">
+            Modern living rooms to pretty to look at, yet comfortable to host
+            in.
+          </p>
         </a>
       </div>
 
       <div class="blog2">
         <div>
           <a href="homeOffices.html">
-          <h4>HOME OFFICES</h4>
-          <p class="mainBlog-p">
-            Creating a home office that is functional and stylish regardless of
-            the size of the space
-          </p>
+            <img
+              src="images/blog-img2.jpg"
+              class="blog-img2"
+              alt="minimalistic home office"
+            />
+          </a>
         </div>
         <div>
-          <img
-          src="images/blog-img2.jpg"
-          class="blog-img2"
-          alt="minimalistic home office"/>
+          <a href="homeOffices.html">
+            <h4>HOME OFFICES</h4>
+            <p class="mainBlog-p">
+              Creating a home office that is functional and stylish regardless
+              of the size of the space
+            </p>
           </a>
-      
-       
-        </a>
-      </div>
+        </div>
       </div>
       <div class="blog3">
         <a href="calmingBedroom.html">
@@ -179,8 +204,11 @@
           </p>
         </a>
       </div>
+      <a href="blog.html"
+        ><button class="button-52" role="button">Blog Posts</button></a
+      >
     </div>
-    <a href="blog.html" class="mainBlogLink">More Blog Posts</a>
+
     <!--Footer-->
     <footer>
       <div class="row">
@@ -208,7 +236,11 @@
           <h5>SOCIAL</h5>
           <ul class="footer-nav">
             <li class="nav-item mb-2">
-              <a href="https://www.instagram.com/interiorlivingly/" class="nav-linkFooter">Instagram</a>
+              <a
+                href="https://www.instagram.com/interiorlivingly/"
+                class="nav-linkFooter"
+                >Instagram</a
+              >
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-linkFooter">Linkedin</a>
@@ -236,14 +268,13 @@
           </form>
         </div>
       </div>
-    <hr/>
+      <hr />
       <a
         href="https://www.luzannesmith.co.za/"
         target="_blank"
         class="portfolio-link"
         >MADE BY LUZANNE</a
       >
-     
     </footer>
     <script>
       AOS.init();
